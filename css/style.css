@@ -44,6 +44,7 @@
 }
 
 body {
+  background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -98,13 +99,13 @@ ul {
   background-color: var(--color-brand-normal);
   border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
-  cursor: pointer;
   font-weight: 600;
 }
 
 .button:hover {
   color: var(--color-brand-dark);
   background-color: transparent;
+  cursor: pointer;
 }
 
 /* Link */
@@ -119,7 +120,9 @@ ul {
 }
 
 /* Header */
-
+.header {
+  background-color: #cfcfbc;
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -225,6 +228,10 @@ ul {
   max-width: 710px;
 }
 
+.baker-photo {
+  border-radius: 400px 400px 0px 0px;
+}
+
 /* Chef-section */
 .chefs-title {
   margin: 0 auto 80px;
@@ -245,6 +252,11 @@ ul {
   margin-bottom: 16px;
 }
 
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-primary-dark);
+}
 /* Formats section */
 .format-card {
   height: 444px;
@@ -283,9 +295,32 @@ ul {
   font-weight: 300;
 }
 
+/* Carousel */
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
 /* Contact section */
 .contact-title {
   margin-bottom: 16px;
+}
+.contact-map {
+  border-radius: 16px;
 }
 
 /* Footer */
@@ -310,4 +345,8 @@ ul {
 
 .address-copyright {
   font-size: 14px;
+}
+
+.address-icon {
+  fill: var(--color-primary-light);
 }
